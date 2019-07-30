@@ -20,10 +20,9 @@ You can try it first with a `virtualbox`
 
 ### Without git
 - Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
-- get the script: ` wget https://github.com/helmuthdu/aui/tarball/master -O - | tar xz`
-    - an alternate URL (for less typing (github shorten)) is ` wget https://git.io/vS1GH -O - | tar xz`
-    - an alternate URL (for less typing) is ` wget http://bit.ly/NoUPC6 -O - | tar xz`
-    - super short `wget ow.ly/wnFgh -O aui.zip`
+- get the script: ` wget https://github.com/ivangsm/aui/tarball/master -O - | tar xz`
+    - an alternate URL (for less typing (github shorten)) is ` wget https://git.io/fh5Op -O - | tar xz`
+    - an alternate URL (for less typing) is ` wget https://bit.ly/2GDjIOd -O - | tar xz`
 
 ## How to use
 - FIFO [system base]: `cd <dir> && ./fifo`
