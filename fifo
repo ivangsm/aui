@@ -1,7 +1,4 @@
 #!/bin/bash
-#-------------------------------------------------------------------------------
-#Created by helmuthdu mailto: helmuthdu[at]gmail[dot]com
-#-------------------------------------------------------------------------------
 #This program is free software: you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by
 #the Free Software Foundation, either version 3 of the License, or
@@ -45,7 +42,7 @@ select_keymap(){
 #DEFAULT EDITOR {{{
 select_editor(){
   print_title "DEFAULT EDITOR"
-  editors_list=("emacs" "nano" "vi" "vim" "neovim" "zile");
+  editors_list=("emacs" "nano" "vi" "vim" "neovim");
   PS3="$prompt1"
   echo -e "Select editor\n"
   select EDITOR in "${editors_list[@]}"; do

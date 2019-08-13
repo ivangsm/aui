@@ -1,11 +1,6 @@
-### Project only accepting patches
-This project is not actively developed but *will* accept PRs
-
 # Archlinux U Install
 
 Install and configure archlinux has never been easier!
-
-You can try it first with a `virtualbox`
 
 ## Prerequisites
 
@@ -13,10 +8,6 @@ You can try it first with a `virtualbox`
 - Logged in as 'root'
 
 ## How to get it
-### With git
-- Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
-- Get list of packages and install git: `pacman -Sy git`
-- get the script: `git clone git://github.com/helmuthdu/aui`
 
 ### Without git
 - Increase cowspace partition: `mount -o remount,size=2G /run/archiso/cowspace`
@@ -72,5 +63,3 @@ You can try it first with a `virtualbox`
 - Install Fonts [Liberation, MS-Fonts, Google-webfonts...]
 - Install and configure Web Servers
 - Many More...
-
-If you like my work, please consider a small Paypal donation at helmuthdu@gmail.com :)
