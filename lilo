@@ -869,8 +869,9 @@ install_desktop_environment(){
     while true
     do
       print_title "GNOME ICONS"
-      echo " 1) $(menu_item "numix-icon-theme-git") $AUR"
-      echo " 2) $(menu_item "papirus-icon-theme-git")"
+      echo " 1) $(menu_item "arc-icon-theme")"
+      echo " 2) $(menu_item "numix-icon-theme-git") $AUR"
+      echo " 3) $(menu_item "papirus-icon-theme-git") $AUR"
       echo ""
       echo " b) BACK"
       echo ""
@@ -879,9 +880,12 @@ install_desktop_environment(){
       for OPT in ${OPTIONS[@]}; do
         case "$OPT" in
           1)
-            aur_package_install "numix-icon-theme-git numix-circle-icon-theme-git"
+            package_install "arc-icon-theme"
             ;;
           2)
+            aur_package_install "numix-icon-theme-git numix-circle-icon-theme-git"
+            ;;
+          3)
             aur_package_install "papirus-icon-theme-git"
             ;;
           "b")
@@ -991,7 +995,7 @@ install_desktop_environment(){
     while true
     do
       print_title "$1 THEMES"
-      echo " 1) $(menu_item "numix-circle-icon-theme-git" "Icons Themes") $AUR"
+      echo " 1) $(menu_item "arc-icon-theme" "Icons Themes")"
       echo " 2) $(menu_item "arc-gtk-theme" "GTK Themes")"
       echo ""
       echo " d) DONE"
@@ -2838,6 +2842,7 @@ install_fonts(){
     echo " 8) $(menu_item "ttf-ms-fonts") $AUR"
     echo " 9) $(menu_item "wqy-microhei") (Chinese/Japanese/Korean Support)"
     echo "10) $(menu_item "noto-fonts-cjk") (Chinese/Japanese/Korean Support)"
+    echo "11) $(menu_item "nerd-fonts-complete") $AUR"
     echo ""
     echo " b) BACK"
     echo ""
@@ -2878,6 +2883,9 @@ install_fonts(){
           ;;
         10)
           package_install "noto-fonts-cjk"
+          ;;
+        11)
+          package_install "nerd-fonts-complete"
           ;;
         "b")
           break
